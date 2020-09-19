@@ -20,6 +20,16 @@
 </script>
 
 <style>
+a {
+  color: #fff;
+}
+
+a:hover {
+  text-decoration: none !important;
+  text-transform: uppercase;
+  color: #fff;
+}
+
 .link {
   margin: 0.5em;
   padding: 0.6em;

@@ -7,8 +7,6 @@
 
   </div>
 </template>
-
-
 <script>
 import Header from './components/Header';
 import CardList from './components/CardList';
@@ -104,16 +102,6 @@ ul {
 li {
   display: inline-block;
   margin: 0 30px;
-}
-
-a {
-  color: #ffffff;
-}
-
-a:hover {
-  text-decoration:none;
-  text-transform: uppercase;
-  color: #ffffff;
 }
 
 @media screen and (min-width: 650px) {
