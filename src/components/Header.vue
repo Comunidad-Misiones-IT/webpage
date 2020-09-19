@@ -1,10 +1,10 @@
 <template>
 	<div>
 		<div class="mb-2">
-			<button type="button" class="btn" onclick="cambiarModo()">🌞|🌚</button>
+			<button type="button" class="btn" @click="cambiarModo">🌞|🌚</button>
 		</div>
 
-		<img src="/img/mit.png" class="avatar" id="img" alt="avatar" />
+		<img src="/img/mit.png" class="avatar img" alt="avatar" />
 		<h1>Misiones IT</h1>
 
 		<div class="m-2 desc">
@@ -12,6 +12,16 @@
 		</div>
 	</div>
 </template>
+
+<script>
+	export default {
+		methods: {
+			cambiarModo() { 
+				document.body.classList.toggle("oscuro"); 
+			}
+		}
+	}
+</script>
 
 <style>
 	.oscuro button {
