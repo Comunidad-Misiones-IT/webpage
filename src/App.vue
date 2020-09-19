@@ -8,6 +8,10 @@
     <img :src="avy" class="avatar" id="img" alt="avatar" />
     <h1>{{ msg }}</h1>
 
+  <div class="m-2 desc">
+    <p>Somos una comunidad convencida de que Misiones tiene talento valioso para la industria IT, y lo queremos potenciar. Si queres saber que hay detrás de esta pagina, manijear juegos o compartir experiencias seguí a MIT en sus redes:</p>
+  </div>
+ 
     <div class="links container-fluid">
       <div class="link" id="link">
         <a href="https://discord.com/invite/6Tkv8pn">
@@ -31,9 +35,9 @@
       </div>
 
       <div class="link" id="link">
-        <a href="https://facebook.com">
-          <img :src="Facebook" class="ico" id="ico" alt="facebook" />
-          Facebook
+        <a href="https://www.linkedin.com/company/comunidad-mit/">
+          <img :src="Linkedin" class="ico" id="ico" alt="linkedin" />
+          Linkedin
         </a>
       </div>
 
@@ -65,9 +69,10 @@ import avy from './assets/mit.png'
 import instagram from './assets/instagram.png'
 import twitter from './assets/twitter.png'
 import discord from './assets/discord.png'
-import facebook from './assets/facebook.png'
+import linkedin from './assets/linkedin.png'
 import youtube from './assets/youtube.png'
 import github from './assets/github.png'
+import email from './assets/email.png'
 
 export default {
   name: 'app',
@@ -77,9 +82,10 @@ export default {
       Twitter: twitter,
       Instagram: instagram,
       Discord: discord,
-      Facebook: facebook,
+      Linkedin: linkedin,
       Youtube: youtube,
       Github: github,
+      Email: email,
       avy: avy
     }
   }
@@ -125,6 +131,10 @@ export default {
 
 .oscuro #ico { 
   filter: sepia(100%) hue-rotate(40deg) invert(1) grayscale(20%) saturate(50%) brightness(7);
+}
+
+.oscuro .desc {
+  color: white;
 }
 
 #app {
