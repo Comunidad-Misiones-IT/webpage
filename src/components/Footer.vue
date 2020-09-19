@@ -12,4 +12,8 @@
 		color: #3c373b;
 		font-size: 14px;
 	}
+
+	.oscuro sup {
+		color: #f1eded;
+	}
 </style>

@@ -24,8 +24,22 @@
 </script>
 
 <style>
+	.avatar {
+		width: 7em;
+		margin-bottom: 1em;
+		margin-top: 0.2em;
+	}
+
+	.oscuro h1 { 
+		color: #f1eded;
+	}
+
 	.oscuro button {
 		color: #f1eded;
+	}
+
+	.oscuro .desc {
+		color: white;
 	}
 
 	button:hover {
@@ -34,5 +48,12 @@
 
 	button:focus {
 		outline:0;
+	}
+	
+	h1, h2 {
+		font-weight: normal;
+		font-size: 2.5rem;
+		text-transform: uppercase;
+		letter-spacing: 0.1em;
 	}
 </style>
