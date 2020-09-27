@@ -1,6 +1,5 @@
 <template>
-  <div id="app" class="container-fluid">
-
+  <div id="app" class="container-fluid"
     <div class="mb-2">
       <button type="button" class="btn" onclick="cambiarModo()">🌞|🌚</button>
     </div>
@@ -60,81 +59,31 @@
       <sup>All rigths reserved | Comunidad MIT © 2020</sup>
     </div>
 
+    <Header />
+    <CardList />
+    <Footer />
+
   </div>
 </template>
-
-
 <script>
-import avy from './assets/mit.png'
-import instagram from './assets/instagram.png'
-import twitter from './assets/twitter.png'
-import discord from './assets/discord.png'
-import linkedin from './assets/linkedin.png'
-import youtube from './assets/youtube.png'
-import github from './assets/github.png'
-import email from './assets/email.png'
+import Header from './components/Header';
+import CardList from './components/CardList';
+import Footer from './components/Footer';
 
 export default {
   name: 'app',
-  data () {
-    return {
-      msg: 'Misiones IT',
-      Twitter: twitter,
-      Instagram: instagram,
-      Discord: discord,
-      Linkedin: linkedin,
-      Youtube: youtube,
-      Github: github,
-      Email: email,
-      avy: avy
-    }
-  }
+  components: {
+    Header,
+    CardList,
+    Footer
+  }, 
 }
 
 </script>
 
 <style>
-.oscuro { 
-    background-color: #1f1f1f; 
-    color: #f1eded;
-}
-
-.oscuro h1 { 
-    color: #f1eded;
-}
-
-.oscuro sup {
-    color: #f1eded;
-}
-
-.oscuro button {
-    color: #f1eded;
-}
-
-.oscuro a {
-    color: #3c373b;
-}
-
-.oscuro a:hover {
-  text-decoration:none;
-  text-transform: uppercase;
-  color: #3c373b;
-}
-
-.oscuro #img { 
-  filter: invert(1) grayscale(100%) brightness(2);
-}
-
-.oscuro #link { 
-  background-color: #ffffff;
-}
-
-.oscuro #ico { 
-  filter: sepia(100%) hue-rotate(40deg) invert(1) grayscale(20%) saturate(50%) brightness(7);
-}
-
-.oscuro .desc {
-  color: white;
+* {
+  background-color: transparent;
 }
 
 #app {
@@ -151,76 +100,9 @@ export default {
   margin: 0.4em 0em;
 }
 
-button:hover {
-  color: #f1eded;
-}
-
-button:focus {
-  outline:0;
-}
-
-* {
-  background-color: transparent;
-}
-
-.links {
-  padding: 0.2em 1.6em;
-}
-
-.link {
-  margin: 0.5em;
-  padding: 0.6em;
-  font-weight: bold;
-  border-radius: 25px;
-}
-
-.link:nth-child(even) {
-  background-color: #76489a;
-}
-
-.link:nth-child(odd) {
-  background-color: #643786;
-}
-
-.avatar {
-  width: 7em;
-  margin-bottom: 1em;
-  margin-top: 0.2em;
-}
-
-h1, h2 {
-  font-weight: normal;
-  font-size: 2.5rem;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-}
-
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-li {
-  display: inline-block;
-  margin: 0 30px;
-}
-
-a {
-  color: #ffffff;
-}
-
-a:hover {
-  text-decoration:none;
-  text-transform: uppercase;
-  color: #ffffff;
-}
-
-.footer {
-  display: flex;
-  justify-content: center;
-  background-color: transparent;
-  color: #3c373b;
-  font-size: 14px;
+.oscuro { 
+    background-color: #1f1f1f; 
+    color: #f1eded;
 }
 
 @media screen and (min-width: 650px) {
@@ -265,4 +147,9 @@ a:hover {
     margin: 2em;
   }
 }
+
+.oscuro .img { 
+  filter: invert(1) grayscale(100%) brightness(2);
+}
+
 </style>
