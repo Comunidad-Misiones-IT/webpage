@@ -8,7 +8,7 @@
     <img :src="avy" class="avatar" id="img" alt="avatar" />
     <h1>{{ msg }}</h1>
 
-  <div class="m-2 desc">
+  <div class="desc">
     <p>Somos una comunidad convencida de que Misiones tiene talento valioso para la industria IT, y lo queremos potenciar. Si queres saber que hay detrás de esta pagina, manijear juegos o compartir experiencias seguí a MIT en sus redes:</p>
   </div>
  
@@ -250,11 +250,19 @@ a:hover {
     justify-content: center;
     align-items: center;
   }
+
+  .desc {
+    margin: 4em;
+  }
 }
 
 @media screen and (max-width: 650px) { 
   .ico {
     width: 30px;
+  }
+
+  .desc {
+    margin: 2em;
   }
 }
 </style>
