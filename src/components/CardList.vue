@@ -43,6 +43,16 @@
 						link_src: "https://github.com/Comunidad-Misiones-IT"
 					},
 					{
+						nombre: "Spotify",
+						img_src: "/img/spotify.png",
+						link_src: "https://open.spotify.com/user/5bgl2oo5nvp4is4ihv6u4umet"
+					},
+					{
+						nombre: "Email",
+						img_src: "/img/email.png",
+						link_src: "mailto:hola@comit.ar"
+					},
+					{
 						nombre: "WEBINAR: Programar desde Misiones",
 						img_src: "/img/youtube.png",
 						link_src: "https://www.youtube.com/watch?v=tabBLNTPInQ"
