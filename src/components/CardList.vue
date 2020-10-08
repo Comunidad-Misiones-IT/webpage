@@ -48,6 +48,11 @@
 						link_src: "https://open.spotify.com/user/5bgl2oo5nvp4is4ihv6u4umet"
 					},
 					{
+						nombre: "Twitch",
+						img_src: "/img/twitch.png",
+						link_src: "https://www.twitch.tv/comunidadmit"
+					},
+					{
 						nombre: "Email",
 						img_src: "/img/email.png",
 						link_src: "mailto:hola@comit.ar"
