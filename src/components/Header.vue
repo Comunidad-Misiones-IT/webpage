@@ -8,7 +8,7 @@
 		<h1>Misiones IT</h1>
 
 		<div class="m-2 desc">
-			<p>Somos una comunidad convencida de que Misiones tiene talento valioso para la industria IT, y lo queremos potenciar. Si queres saber que hay detrás de esta pagina, manijear juegos o compartir experiencias seguí a MIT en sus redes:</p>
+			<p>Somos una comunidad convencida de que Misiones tiene talento valioso para la industria IT, y lo queremos potenciar. Si querés saber qué hay detrás de esta página, manijear juegos o compartir experiencias, seguí a MIT en sus redes:</p>
 		</div>
 	</div>
 </template>
